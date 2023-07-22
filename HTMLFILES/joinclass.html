@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classroom-Qspiders Online</title>
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0px;
+            background-color: rgb(31 41 55);
+        }
+
+        .main {
+            display: flex;
+            justify-content: space-between;
+            position: relative;
+        }
+
+        .std a {
+            margin-left: 5px;
+            color: orange;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .batch a {
+            color: white;
+            font-size: 18px;
+            font-weight: bolder;
+        }
+
+        .header {
+            width: 100%;
+            height: 50px;
+            background-color: rgb(17 24 39);
+            position: fixed;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: white;
+        }
+
+        .right {
+            display: flex;
+            width: 170px;
+            justify-content: space-between;
+        }
+
+        .vl {
+            border-left: 2px solid gray;
+            height: 50px;
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: 75px;
+        }
+
+        select {
+            background-color: rgb(35, 48, 77);
+            border-radius: 1px solid rgb(35, 48, 77);
+            color: white;
+            width: 70px;
+
+        }
+
+        option {
+            background-color: rgb(35, 48, 77);
+        }
+
+        .left {
+            display: flex;
+            margin-right: 10px;
+            align-items: center;
+        }
+
+        .list {
+            display: flex;
+
+        }
+
+        li {
+            list-style: none;
+            margin-right: 10px;
+        }
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        .join {
+            position: absolute;
+            display: flex;
+            flex-direction: column;
+            top: 100px;
+            left: 35%;
+            width: 300px;
+            height: 350px;
+            background-color: rgb(86, 89, 89);
+        }
+
+        .join-heading {
+            color: white;
+            font-size: 18px;
+            margin-top: 10px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .join-content{
+            display: flex;
+            color: rgb(210, 204, 204);
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        .join-hr{
+            border: 1px solid black;
+            width: 220px;
+            color: black;
+        }
+        hr{
+            width: 99%;
+        }
+        .join-btn{
+            color: white;
+            background-color: rgb(37 99 235);
+            border: none;
+            font-weight: bold;
+            font-size: 13px;
+            width: 100px;
+            height: 25px;
+        }
+        .join-btn:hover{
+            opacity: 0.8;
+        }
+        .join-button{
+            display: flex;
+            justify-content: center;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="main">
+        <div class="header">
+            <div class="right">
+                <div class="std"><a href="./home.html">Student</a></div>
+                <div class="vl"></div>
+                <div class="batch"><a href="./home.html" target="_parent">Batch List</a></div>
+            </div>
+            <div class="left">
+                <div class="left1">
+                <ul class="list">
+                    <li class="items"><a href="./pay1.html" class="link">Pay</a> |</li>
+                    <li class="items"><a href="" class="link" onclick="
+                    alert('Profile Downloaded')
+                    ">View Profile
+                    </a> |</li>
+                    <li class="items"><a href="" class="link" onclick="
+                    alert(`No New Class is available Now!! Contact Councellor`);
+                    ">Join New Class</a> |</li>
+                    <li class="items"><a href="" class="link" onclick="
+                    alert(`Contact HR for Requirements`)
+                    ">Requirements
+                    </a> |</li>
+                    <li class="items"><a href="../login.html"class="link" >Logout</a> |</li>
+                </ul>
+            </div>
+                <div class="left2">
+                        <select>
+                            <option>Sanjay</option>
+                            <option>Course Details</option>
+                            <option>Add Contact</option>
+                            <option>Add Email</option>
+                            <option>Refer Friend</option>
+                        </select>
+                    </div>
+            </div>
+    </div>
+        <div class="hr">
+            <hr>
+        </div>
+        <div class="join">
+            <div class="join-heading">Streaming Information</div>
+            <hr>
+            <div class="join-content">
+                <ul class="join-list">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Laptop/Desktop</li>
+                    <hr class="join-hr">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Windows</li>
+                    <hr class="join-hr">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Chrome (version: 114)</li>
+                    <hr class="join-hr">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Streaming supported</li>
+                    <hr class="join-hr">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Microphone supported</li>
+                    <hr class="join-hr">
+                    <li class="join-items">&nbsp;&nbsp;&nbsp; Webcam supported</li>
+                    <hr class="join-hr">
+                </ul>
+            </div>
+            <div class="hr">
+                <hr>
+            </div>
+            <div class="join-button">
+                <button class="join-btn" onclick="
+                    alert(`Trainer Not Yet Joined`)
+                    ">Join Now</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
